@@ -1,0 +1,7 @@
+{
+  "name": "ionic-lb9-12",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
