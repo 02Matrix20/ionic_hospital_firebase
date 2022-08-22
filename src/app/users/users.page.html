@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Рецепт </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let user of users" text-wrap>
+          <ion-icon name="medical-outline"></ion-icon>
+          <ion-label text-wrap>{{user.name}}</ion-label>
+          <ion-note slot="end">{{user.vik}}</ion-note>
+          <ion-note slot="end">{{user.weight}}</ion-note>
+    </ion-item>
+  </ion-list>
+
+  <ion-item>
+    <ion-label position="floating">Дані на home</ion-label>
+    <ion-input type="text" [(ngModel)]="textData"></ion-input>
+  </ion-item>
+  <ion-button color="primary" class="ion-float-right" (click)="passData()">
+    <ion-icon slot="start" name="sync"></ion-icon>Повернути дані
+  </ion-button>
+</ion-content>

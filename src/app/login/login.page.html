@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Hospital</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row color="primary" justify-content-center>
+      <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+        <div text-center>
+          <h3>Вхід</h3>
+        </div>
+        <ion-item>
+          <ion-label position="floating">Ім'я користувача</ion-label>
+          <ion-input type="text" [(ngModel)]="userName"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Пароль</ion-label>
+          <ion-input type="password" [(ngModel)]="passWord"></ion-input>
+        </ion-item>
+        <ion-button color="primary" class="ion-float-right" (click)="login()">
+          <ion-icon slot="start" name="log-in"></ion-icon>Увійти
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
